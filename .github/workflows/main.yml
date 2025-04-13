@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Yogesh-S:$HF_TOKEN@huggingface.co/spaces/Yogesh-S/Dataframe_agent_llm master:main
+        run: git push https://Yogesh-S:$HF_TOKEN@huggingface.co/spaces/Yogesh-S/Dataframe_agent_llm main:main
