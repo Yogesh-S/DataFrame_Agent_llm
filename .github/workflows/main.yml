@@ -13,7 +13,11 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Push to hub
+      - name: Pull latest changes from remote
+        run: git pull https://Yogesh-S:$HF_TOKEN@huggingface.co/spaces/Yogesh-S/Dataframe_agent_llm main
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      - name: Push to hub
         run: git push https://Yogesh-S:$HF_TOKEN@huggingface.co/spaces/Yogesh-S/Dataframe_agent_llm main:main
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
