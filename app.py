@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain_community.llms import Ollama
+# from langchain_community.llms import Ollama
 import pandas as pd
 from langchain_experimental.agents import create_csv_agent
 from langchain_experimental.tools.python.tool import PythonAstREPLTool
